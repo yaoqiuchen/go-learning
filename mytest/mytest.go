@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/go-learning/mytest/file"
+	"github.com/go-learning/mytest/variable"
 )
 
 func main() {
@@ -10,7 +10,8 @@ func main() {
 	//fmt.Println(stringutil.Reverse("!ecnaDetyB nioJ I"))
 	//fmt.Println(TryThis())
 
-	file.PrintImage()
+	variable.PlayBool(true)
+	//file.PrintImage("test")
 
 	//variable.PlayVar(3, 4)
 	//a, _ := variable.PlayVar(3, 4)

@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-func PrintImage() {
+func PrintImage(fileName string) {
 	// 图片大小
 	const size = 300
 	// 根据给定大小创建灰度图
@@ -31,12 +31,12 @@ func PrintImage() {
 		pic.SetGray(x, int(y), color.Gray{0})
 	}
 	// 创建文件
-	file, err := os.Create("sin.png")
+	file, err := os.Create(fileName + ".png")
+	defer file.Close()
 	if err != nil {
 		log.Fatal(err)
 	}
 	// 使用png格式将数据写入文件
 	png.Encode(file, pic) //将image信息写入文件中
 	// 关闭文件
-	file.Close()
 }
