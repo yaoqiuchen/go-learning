@@ -20,8 +20,8 @@ func TestSwitch2(times int) {
 	case 2:
 		fmt.Println("input is 2")
 	}
-}
-
-func DetectType() {
 
 }
+
+
+
