@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/go-learning/mytest/collection"
+	"github.com/go-learning/mytest/file"
 )
 
 func main() {
@@ -10,8 +10,15 @@ func main() {
 	//fmt.Println(stringutil.Reverse("!ecnaDetyB nioJ I"))
 	//fmt.Println(TryThis())
 
-	condition.ReturnWhat2("Vincent")
-	condition.ReturnWhat2("No Body Found")
+	file.PrintImage()
+
+	//variable.PlayVar(3, 4)
+	//a, _ := variable.PlayVar(3, 4)
+	//_, b := variable.PlayVar(3, 4)
+	//fmt.Println(a, b)
+
+	//condition.ReturnWhat2("Vincent")
+	//condition.ReturnWhat2("No Body Found")
 
 	//condition.PlayMap(3)
 	//i1, i2 :=condition.ReturnWhat()
