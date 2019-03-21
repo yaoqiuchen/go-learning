@@ -2,11 +2,17 @@ package main
 
 import (
 	"fmt"
-	"github.com/go-learning/mytest/condition"
+	"github.com/go-learning/mytest/variable"
 )
 
 func main() {
 	fmt.Println("Hello, Vincent. hello MyTest")
+
+	variable.ByteAndRune()
+	//variable.SubString()
+	//variable.AppendString()
+
+
 	//fmt.Println(stringutil.Reverse("!ecnaDetyB nioJ I"))
 	//fmt.Println(TryThis())
 
@@ -22,7 +28,7 @@ func main() {
 	//condition.ReturnWhat2("Vincent")
 	//condition.ReturnWhat2("No Body Found")
 
-	condition.LoopString("去头条work")
+	//condition.LoopString("去头条work")
 	//condition.PlayMap(3)
 	//i1, i2 :=condition.ReturnWhat()
 	//fmt.Println("what is returned, i1", i1, "i2", i2)
