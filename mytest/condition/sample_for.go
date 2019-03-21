@@ -1,6 +1,8 @@
 package condition
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func TestFor(times int) {
 	sum := 0
@@ -20,4 +22,13 @@ func BreakLoop(times int)  {
 		}
 	}
 	fmt.Println("BreakLoop: ", sum)
+}
+
+func LoopString(input string) {
+	for i := 0; i < len(input); i++ {
+		fmt.Printf("char at %d is %c, ascII is %d\n", i, input[i], input[i])
+	}
+	for i, s := range input {
+		fmt.Printf("character at %d is %c\n", i, s)
+	}
 }
